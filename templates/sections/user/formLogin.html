@@ -1,0 +1,14 @@
+<form id="form_login" action="index.php" method="post">
+    <label>Usuario <span class="help"></span><br>
+        <input type="text" name="email" id="correo" value="{email}" placeholder="Correo Electrónico">
+    </label>
+    <br>
+    <label>Contraseña <span class="help"></span><br>
+        <input type="password" name="password" id="contrasenia" placeholder="Contraseña">
+    </label>
+    <br>
+    <input type='hidden' name='ruta' value='login' />
+    <input type='hidden' name='accion' value='dologin' />
+    {ruta-registrarse}
+    <input type="submit" value="Enviar" id="boton">
+</form>

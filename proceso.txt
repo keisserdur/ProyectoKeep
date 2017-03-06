@@ -1,0 +1,102 @@
+Google API Console
+  https://console.developers.google.com/?hl=ES
+
+Project > Crear proyecto
+
+APIs de Google Apps > Gmail API > Habilitar
+
+Credenciales > Id de cliente de OAuth > Configurar pantalla de autorizacion > Tipo Web
+
+Cliente Web:
+  https://TUURL.c9users.io
+  https://TUURL.c9users.io/RUTA/ARCHIVOQUEGUARDAELTOKEN.php
+
+Id de cliente: 380....apps.googleusercontent.com
+Secreto de cliente: 1rk...WwG
+
+composer require google/apiclient:^2.0
+composer require phpmailer/phpmailer
+
+solicitar token de autorización
+
+<?php
+session_start();
+require_once 'vendor/autoload.php';
+$cliente = new Google_Client();
+$cliente->setApplicationName('TU_PROYECTO');
+$cliente->setClientId('TU_ID');
+$cliente->setClientSecret('TU_SECRET');
+$cliente->setRedirectUri('TU_PAGINA_PARA_GUARDAR_LA_AUTORIZACION');
+$cliente->setScopes('https://www.googleapis.com/auth/gmail.compose');
+$cliente->setAccessType('offline');
+if (!$cliente->getAccessToken()) {
+   $auth = $cliente->createAuthUrl();
+   header("Location: $auth");
+}
+
+guardar token de autorización
+
+<?php
+session_start();
+require_once 'vendor/autoload.php';
+$cliente = new Google_Client();
+$cliente->setApplicationName('TU_PROYECTO');
+$cliente->setClientId('TU_ID');
+$cliente->setClientSecret('TU_SECRET');
+$cliente->setRedirectUri('TU_PAGINA_PARA_GUARDAR_LA_AUTORIZACION');
+$cliente->setScopes('https://www.googleapis.com/auth/gmail.compose');
+$cliente->setAccessType('offline');
+if (isset($_GET['code'])) {
+   $cliente->authenticate($_GET['code']);
+   $_SESSION['token'] = $cliente->getAccessToken();
+   $archivo = "token.conf";
+   $fh = fopen($archivo, 'w') or die("error");
+   fwrite($fh, json_encode($cliente->getAccessToken()));
+   fclose($fh);
+}
+
+
+enviar un correo
+
+<?php
+session_start();
+
+$origen = "TUCORREO@gmail.com";
+$alias = "Pepe Perez";
+$destino = "DESTINO@CORREO.EXT";
+$asunto = "Prueba de correo";
+$mensaje = "¿Llegará?";
+
+require_once 'vendor/autoload.php';
+$cliente = new Google_Client();
+$cliente->setApplicationName('TU_PROYECTO');
+$cliente->setAccessToken(file_get_contents('token.conf'));
+if ($cliente->getAccessToken()) {
+    $service = new Google_Service_Gmail($cliente);
+    try {
+        $mail = new PHPMailer();
+        $mail->CharSet = "UTF-8";
+        $mail->From = $origen;
+        $mail->FromName = $alias;
+        $mail->AddAddress($destino);
+        $mail->AddReplyTo($origen, $alias);
+        $mail->Subject = $asunto;
+        $mail->Body = $mensaje;
+        $mail->preSend();
+        $mime = $mail->getSentMIMEMessage();
+        $mime = rtrim(strtr(base64_encode($mime), '+/', '-_'), '=');
+        $mensaje = new Google_Service_Gmail_Message();
+        $mensaje->setRaw($mime);
+        $service->users_messages->send('me', $mensaje);
+        echo "Correo enviado correctamente";
+    } catch (Exception $e) {
+        echo ("Error en el envío del correo: ".$e->getMessage());
+    }
+} else {
+    echo "no conectado con gmail";
+}
+
+Leer también
+  https://developers.google.com/api-client-library/php/start/installation
+  https://github.com/google/google-api-php-client
+  https://github.com/google/google-api-php-client/blob/master/UPGRADING.md

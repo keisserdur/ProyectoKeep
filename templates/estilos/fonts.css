@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'exolightitalic';
+    src: url('../fonts/exo-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/exo-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exoblack';
+    src: url('../fonts/exo-black-webfont.woff2') format('woff2'),
+         url('../fonts/exo-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exoblackitalic';
+    src: url('../fonts/exo-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/exo-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exobold';
+    src: url('../fonts/exo-bold-webfont.woff2') format('woff2'),
+         url('../fonts/exo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exobolditalic';
+    src: url('../fonts/exo-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/exo-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exoextrabold';
+    src: url('../fonts/exo-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/exo-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exoextrabolditalic';
+    src: url('../fonts/exo-extrabolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/exo-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exoextralight';
+    src: url('../fonts/exo-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/exo-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exoextralightitalic';
+    src: url('../fonts/exo-extralightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/exo-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exoitalic';
+    src: url('../fonts/exo-italic-webfont.woff2') format('woff2'),
+         url('../fonts/exo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exolight';
+    src: url('../fonts/exo-light-webfont.woff2') format('woff2'),
+         url('../fonts/exo-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exothinitalic';
+    src: url('../fonts/exo-thinitalic-webfont.woff2') format('woff2'),
+         url('../fonts/exo-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutonbold';
+    src: url('../fonts/neuton-bold-webfont.woff2') format('woff2'),
+         url('../fonts/neuton-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutonextrabold';
+    src: url('../fonts/neuton-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/neuton-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutonextralight';
+    src: url('../fonts/neuton-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/neuton-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutonitalic';
+    src: url('../fonts/neuton-italic-webfont.woff2') format('woff2'),
+         url('../fonts/neuton-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exomedium';
+    src: url('../fonts/exo-medium-webfont.woff2') format('woff2'),
+         url('../fonts/exo-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exomediumitalic';
+    src: url('../fonts/exo-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/exo-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exoregular';
+    src: url('../fonts/exo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/exo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exodemibold';
+    src: url('../fonts/exo-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/exo-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exodemibolditalic';
+    src: url('../fonts/exo-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/exo-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exothin';
+    src: url('../fonts/exo-thin-webfont.woff2') format('woff2'),
+         url('../fonts/exo-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'philosopherbold';
+    src: url('../fonts/philosopher-bold-webfont.woff2') format('woff2'),
+         url('../fonts/philosopher-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'philosopherbold_italic';
+    src: url('../fonts/philosopher-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/philosopher-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'philosopheritalic';
+    src: url('../fonts/philosopher-italic-webfont.woff2') format('woff2'),
+         url('../fonts/philosopher-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'philosopherregular';
+    src: url('../fonts/philosopher-regular-webfont.woff2') format('woff2'),
+         url('../fonts/philosopher-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutonlight';
+    src: url('../fonts/neuton-light-webfont.woff2') format('woff2'),
+         url('../fonts/neuton-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutonregular';
+    src: url('../fonts/neuton-regular-webfont.woff2') format('woff2'),
+         url('../fonts/neuton-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'redes';
+    src: url('../fonts/social_shapes-webfont.woff2') format('woff2'),
+         url('../fonts/social_shapes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

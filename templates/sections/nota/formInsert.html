@@ -1,0 +1,11 @@
+{error}<br>
+<h2>Nueva nota</h2><br>
+<form action="index.php" method="post" enctype="multipart/form-data">
+    <input type='text' name='titulo' required placeholder='titulo' /><br/>
+    <input type='text' name='contenido' placeholder='contenido' /><br/>
+    <input type='text' name='favorito' placeholder='0 o 1' /><br/>
+    <input type="file" name="archivo" /></br>
+    <input type='hidden' name='ruta' value='nota' />
+    <input type='hidden' name='accion' value='doinsert' />
+    <input type='submit' value='Guardar' /><br/>
+</form>

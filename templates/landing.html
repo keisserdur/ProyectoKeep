@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang='es'>
+	<head>
+		<title>Jaja Moqui</title>
+        <link rel="stylesheet" href="templates/styles.css">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</head>
+	<body>
+        <header>
+            <img alt="menu icon" class="alternative-menu" src="templates/img/menu.svg">
+            <nav>                
+                <ul>
+                    <!--<li><a href="#splash"><img class="logo" alt="Logo" src=""></a></li>-->
+                    <li><a href="#jajamoqui">JajaMoqui</a></li>
+                    <li><a href="#utilidades">Utilidades</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li>{ruta-login}</li>
+                </ul>
+            </nav>
+            <div id="splash">
+                <div class="register">    
+                    {ruta-registrarse}
+                </div>
+            </div>            
+        </header>
+        
+        
+        
+        <section id="jajamoqui">
+            <p><span class="alternative-color">Ja</span>ja <span class="alternative-color">Mo</span>qui</p>
+            <p>Jaja Moqui es una aplicacion de notas almacenadas en la nube para que puedas acceder a ellas desde cualquier sitio.</p> 
+
+            <p>Pensado tanto para ámbito doméstico como profesional, notas compuestas de texto, video, audio o cualquier tipo de archivo. Recupera tus notas, descargalas y compartelas.</p>
+        </section>
+        
+        <div class="slider">            
+            <img alt="Image slider1" class="espaciador" src="templates/img/keep.jpg">
+            <img alt="Image slider1" class="carousel" src="templates/img/keep.jpg" >
+            <img alt="Image slider2" class="carousel" src="templates/img/meeting-strangers.jpg">
+            <img alt="Image slider2" class="carousel" src="templates/img/desk.jpg">  
+        </div>
+        
+        <div class="efecto">
+            <section id="utilidades">            
+                <div class="col">
+                    <img alt="fotos" class="utilidad" src="templates/img/picture.svg">
+                    <p>Imagenes a toda resolución para que puedas recordar cualquier cosa. Jaja Moqui te permitirá guardar cualquier numero de imágenes en tus notas.</p>
+                    <p>Visualización directa desde nuestra aplicacion, con posibilidad de edición en futuras versiones y siempre con la máxima seguridad.</p>
+                </div>
+                <div class="col">
+                    <img alt="video" class="utilidad" src="templates/img/play.svg">
+                    <p>¿Necesitas grabar un video para completar tu nota? ¡Con Jaja Moqui puedes agregar cualquier video que se te ocurra y rememorarlo cuando quieras!</p>
+                    <p>Podrás visualizarlo desde nuestra aplicacion sin necesidad de instalar programas de terceros. Calidad Full HD para no perder ni un detalle de ese momento. </p>                
+                </div>
+                <div class="col">
+                    <img alt="audio" class="utilidad" src="templates/img/music.svg">
+                    <p>Posibilidad de grabar audios dentro de las notas para no tener que escribir o para recordar una melodía de aquella cancion que te ha venido a la cabeza.</p>
+                    <p>Jaja Moqui guarda tus audios sin ningún tipo de compresión para que las tengas a máxima calidad siempre que quieras volver a escucharlos o descargarlos</p>
+
+                </div>
+            </section>
+        </div>
+        
+        <div class="number">
+            <div class="personas-registradas">
+                <img alt="numbero de registrados" src="templates/img/number.png">
+            </div>
+            <div class="notas-creadas">
+                <p><span id="number-change">546.152.135</span> <span class="alternative-color">notas</span> creadas</p>
+            </div>
+        </div>
+        
+        <section id="equipo">
+            <div id="keisser" class="col">
+                <img alt="Jaime Molina" src="templates/img/tu.jpg">
+                <p>Jaime Molina</p>
+                <p>Con tan solo 21 años, desarrollador de aplicaciones multiplataforma y en proceso de ser desarrollador web. Especialista en php y encargado de dar funcionalidad a nuestra aplicación. A pesar de su temprana edad, ya ha sido jefe de varios proyectos importantes como MeetMe.</p>
+            </div>
+            <div id="ThRAShGO" class="col">
+                <img alt="Javier Quirosa" src="templates/img/yo.jpg">
+                <p>Javier Quirosa</p>
+                <p>Técnico auxiliar en laboratorio de imágen y técnico superior de sonido, es el encargado del sistema de manipulacion de los archivos y del diseño de nuestra aplicación, asi como el diseño de los recursos web con varios años de experiencia en el aprendizaje de desarrollador web.</p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>
+                Lee estos términos y condiciones de uso con atención antes de acceder o utilizar materiales, información, productos o servicios. Al acceder, usar u obtener cualquier contenido, datos, materiales, información, productos o servicios mediante Nuestro Sitio Web, aplicación o cualquier otra plataforma de From the Space Antivirus (en conjunto "Nuestro Sitio Web"), aceptas estos términos y condiciones ("Términos") y nuestra Política de privacidad.
+            </p>
+            <span id="redes">c d e l</span>
+            <p>
+                Jaja Moqui Keep © 2016 || Designed by Jaime Molina & Javier Quirosa
+            </p>
+        </footer>
+        <script src="templates/js/jquery-3.1.1.min.js"></script>
+        
+        <script src="templates/js/aumentarNumeros.js" async></script>
+        <script src="templates/js/carousel.js" async></script>
+        <script src="templates/js/animation.js" async></script>
+        <script src="templates/js/menu.js" async></script>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Notas</title>
+        <meta charset="utf-8">
+        <link type="text/css" href="templates/estilos/notas.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+    </head>
+    <body>
+        <div id="menuNota">
+            <div class="cajaMenu" id="cajaMenu1">
+                <img id="trigger-menu" src="templates/img/notas/menu.svg" alt="icono menu">
+                <a href="index.php"><span id="titulo">Keep</span></a>
+                <a id="agregar" href=""><img src="templates/img/notas/agregarnota.svg" alt="agregar nota icono"></a>
+            </div>
+            <div class="cajaMenu" id="cajaMenu2">
+                <img id="trigger-bold" src="templates/img/notas/bold.svg" alt="icono bold">
+                <img id="trigger-italic" src="templates/img/notas/italic.svg" alt="icono italic">
+                <img id="trigger-sub" src="templates/img/notas/sub.svg" alt="icono subrayado">
+                <img id="trigger-tach" src="templates/img/notas/tachado.svg" alt="icono tachado">
+                <input type="color">
+                <select>
+                    <option>Exo Light</option>
+                    <option>Lato Light</option>
+                    <option>Comic Sans</option>
+                </select>
+            </div>
+            <div class="cajaMenu" id="cajaMenu3">
+                <img id="trigger-order" src="templates/img/notas/ordenar.svg" alt="icono ordenar">
+                <img id="trigger-copy" src="templates/img/notas/copiar.svg" alt="icono copiar">
+                <img id="trigger-list" src="templates/img/notas/lista.svg" alt="icono lista">
+            </div>
+            <div class="cajaMenu" id="cajaMenu4">
+                <img id="trigger-attchment" src="templates/img/notas/adjunto.svg" alt="icono adjunto">
+                <img id="trigger-img" src="templates/img/notas/imagen.svg" alt="icono imagen">
+                <img id="trigger-play" src="templates/img/notas/play.svg" alt="icono play">
+                <img id="trigger-audio" src="templates/img/notas/microfono.svg" alt="icono audio">
+            </div>
+            <div class="cajaMenu" id="cajaMenu5">
+                <img id="trigger-recover" src="templates/img/notas/historial.svg" alt="icono historial">
+                <img id="trigger-download" src="templates/img/notas/descargar.svg" alt="icono descargar">
+                <img id="trigger-delete" src="templates/img/notas/borrar.svg" alt="icono borrar">
+            </div>
+            <div class="espaciador-menu"></div>
+            <div class="cajaMenu" id="alternative-menu">
+                <img alt="Menu alternativo" src="templates/img/notas/menualt.svg">
+            </div>
+            <div class="cajaMenu" id="cajaMenu6">
+                <img src="templates/img/notas/opciones.svg" alt="icono opciones">
+            </div>
+        </div>
+        <div id="contenedor">
+            <div id="menuLateral" class="trigger-open-menu">
+                <div id="menuUsuario" class="subMenu">
+                    <img src="templates/img/notas/fotologin.svg" alt="icono login">
+                    <ul>
+                        <li>{correo}</li>
+                        <li>{configuración}</li>
+                    </ul>
+                </div>
+                <div id="subMenuLateral" class="subMenu">
+                    <ul>
+                        <a href=""><li>Favoritos</li></a>
+                        <a href=""><li>Historial</li></a>
+                        <a href=""><li>Papelera</li></a>
+                        <a href=""><li>Preguntas Frecuentes</li></a>
+                        <li>{cerrar-sesion}</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div id="contenedorNotas" class="trigger-open-menu-notes">
+                {lista}
+        </div>
+    </body>
+    <script src="templates/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="templates/js/modal.js"></script>
+    <script type="text/javascript" src="templates/js/menu.js"></script>
+</html>

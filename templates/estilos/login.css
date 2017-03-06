@@ -1,0 +1,153 @@
+@import url('fonts.css');
+
+html,body{
+    margin: 0 auto;
+}
+
+body{
+    background-color: #414956; 
+}
+
+.wrapper{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#login{
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 350px;
+    max-width: 700px;
+    align-content: space-around;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#login *{
+    flex-basis: 100%;
+}
+
+#titulo{
+    font-family: 'exoextralight';
+    color: white;
+    font-size: 3.333333333333333333em;
+}
+
+#logo{
+    font-family: 'philosopherregular';
+    color: white;
+    font-size: 2.5em;
+}
+
+.subtitulo{
+    font-family: 'exolight';
+    color: white;
+    margin: 30px;
+    font-size: 1.125em;
+}
+
+span{
+    color: #FFFFA5;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #FFFFA5;
+}
+
+.caja{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+/*    box-shadow: 5px 5px 5px rgba(0,0,0,0.45);*/
+}
+
+#izquierdalogin{
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 300px;
+    flex-basis: 50%;
+    background: #292E35;
+}
+img{
+    width: 175px;
+    margin-bottom: 70px;
+}
+
+#derechalogin{
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 300px;
+    flex-basis: 50%;
+    text-align: left;
+    background-color: white;
+    display: flex;
+    font-family: 'exolight';
+    font-size: 1.125em;
+}
+
+form{
+    width: 100%;
+    padding: 20px;
+}
+
+form *{
+    margin: 15px;
+}
+
+label{
+    width: 100%;
+}
+
+label input{
+    border: 0 solid;
+    width: 70%;
+    height: 10%;
+    padding-left: 10px;
+    margin-left: 40px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.45);
+    border: 0 solid;
+}
+
+#boton{
+    width: 40%;
+    height: 15%;
+    font-family: 'exolight';
+    float: right;
+    background-color: #292E35;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.45);
+    border: 0 solid;
+    color: white;
+    margin-top: 25px;
+}
+
+#boton:hover{
+    background-color: #414956;
+}
+
+#registro{
+    color: #292E35;
+    float: left;
+    font-size: 0.7em;
+    margin-top: 45px;
+}
+
+
+.error{
+    color : #FFAAAA;
+    font-family: 'exolight';
+}
+
+.help{
+    color: red;
+    padding-bottom: 7px;
+    font-size: 0.6em;
+    font-family: 'exolight';
+}

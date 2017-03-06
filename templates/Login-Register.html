@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Login - Register</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{estilos}" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="espacio"></div>
+            <section id="login">
+                <p id="logo"><span>Ja</span>ja <span>Mo</span>qui</p>
+                <p id="titulo">Tus notas en un <span>click</span></p>
+                <p class="subtitulo">Texto, <span>audio</span>, video, <span>listas</span></p>
+                {error}
+                <div class="caja">
+                    <div id="izquierdalogin">
+                        <img src="templates/img/fotologin.svg">
+                    </div>
+                    <div id="derechalogin">
+                        {form}
+                    </div>
+                </div>
+                <p class="subtitulo">{ruta-descrubre}</p>
+            </section>
+            <div class="espacio"></div>
+        </div>
+        <script src="templates/js/jquery-3.1.1.min.js"></script>
+        <!--<script type="text/javascript" src="templates/js/validarForm.js"></script>-->
+    </body>
+</html>

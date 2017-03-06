@@ -1,0 +1,18 @@
+<form id="form_register" action="index.php" method="post">
+    <label>Correo Electronico <span class="help"></span><br>
+        <input type="text" name="email" id="correo" value="{email}" placeholder="Correo Electronico">
+    </label>
+    <br>
+    <label>Contraseña <span class="help"></span><br>
+        <input type="password" name="password" id="contrasenia" placeholder="Contraseña">
+    </label>
+    <br>
+    <label>Confirmar Contraseña <span class="help"></span><br>
+        <input type="password" name="password2" id="contrasenia2" placeholder="Confirmar Contraseña">
+    </label>
+    <br>
+    <input type='hidden' name='ruta' value='register' />
+    <input type='hidden' name='accion' value='doinsert' />
+    {ruta-login}
+    <input type="submit" value="Registro" id="boton">
+</form>

@@ -1,0 +1,369 @@
+@import url(fonts.css);
+
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: 'philosopherregular', sans-serif;
+}
+p{
+    font-family: 'exoextralight', sans-serif;
+    font-weight: 200;
+    font-size: 1.125em; /* 18px / 16px / 1,125em*/
+   
+}
+
+/************** Primer pantallazo ***************/
+
+header{
+    width: 100%;
+    height: 100%;        
+    background-image: url(../img/primera-pantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;    
+    box-sizing: border-box;
+    background-position: 50% 50%;
+}
+
+.alternative-menu{
+    display: none;
+    position: fixed;
+    right: 0;
+    margin: 20px;
+    z-index: 99999;
+}
+.alternative-menu:hover{
+    cursor: pointer;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../img/menu2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'philosopherregular';
+}
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding-bottom: 45px;
+}
+
+nav ul li{
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+nav ul li a{
+    color: #414956;
+}
+
+nav ul li a:hover{
+    color: #FDFDFD;
+}
+
+.visible{
+    display: block !important;
+}
+
+@media screen and (max-width:780px){
+    .alternative-menu{
+        display: block;
+    }
+    
+    nav{
+        position: fixed;
+        display: none;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/menuMovil.png');
+        background-size: 100% 50%;
+        background-repeat: repeat;
+    }
+    nav ul{
+        
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        
+    }
+    
+    nav ul li:first-child{
+        padding-top: 15%;
+        padding-bottom: 55%;
+    }    
+        
+    nav ul li:not(:first-child){
+        padding-bottom: 25px;
+    }
+    
+    header{
+        background-image: url(../img/primera-pantalla-movil.jpg);
+    }
+}
+
+#splash{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#splash .register{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #E5EBD4;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.45);
+}
+#splash .register:hover{
+    background-color: #FDFDFD;
+}
+
+#splash .register a{
+    color: #003A6A;
+}
+
+/************** Intro ***************/
+
+#jajamoqui{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#jajamoqui p{
+    width: 80%;
+    text-align: center;
+    align-self: center;
+    font-size: 1.3875em; /* 25px / 18px / 1,1875em*/
+}
+#jajamoqui p:first-child{
+    margin: 15px;
+    font-size: 3.333333333333333em; /* 60px / 18px / 3,333333333333333em*/
+}
+
+.alternative-color{
+    color: crimson;
+}
+
+/************** Slider ***************/
+
+.slider{   
+    margin: 0 auto;
+    width: 1100px;
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (max-width:1100px){
+    .slider{
+        width: 100%;
+    }
+}
+
+.slider .carousel{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    object-fit: cover;
+}
+.slider .espaciador{
+    visibility: hidden;
+    width: 100%;
+    object-fit: cover;
+}
+
+/************** Utilidades ***************/
+.efecto{
+    margin-top: 300px;
+    opacity: 0;
+}
+#utilidades{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    
+}
+#utilidades .col{
+    flex-basis: 30%;
+    flex-grow: 1;
+    min-width: 275px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    text-align: justify;
+    box-sizing: border-box;    
+}
+
+#utilidades img{
+    width: 75px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.number{
+    opacity: 0;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.number img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.notas-creadas{
+    text-align: center;
+}
+/************** Equipo ***************/
+
+#equipo{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15px;
+}
+
+#equipo .col{
+    flex: 1 1 50%;
+    min-width: 300px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    justify-content: center;    
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -300px;
+    opacity: 0;
+}
+#equipo .col:first-child{
+    padding-right: 3px;
+}
+#equipo .col:last-child{
+    padding-left: 3px;
+}
+
+#equipo img{
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    margin: 0 auto;
+    align-self: center;
+}
+
+#equipo p{
+    flex-basis: 95%;
+    text-align: justify;
+}
+
+
+/************** Footer ***************/
+
+footer{
+    width: 100%;
+    background-color: #292E35;
+    margin-top: 25px;
+    text-align: center;
+}
+
+footer p{
+    margin: 0 auto;
+    width:80%;
+    color: white;
+    padding: 30px;
+}
+
+#redes {
+    font-family: 'redes';
+    font-size: 60px;
+    color: white;
+}
+
+
+/*******************************************/
+.showLeft{
+    animation-name: showslider;
+    animation-duration:  1.5s;
+    animation-iteration-count:  1; 
+    animation-fill-mode: forwards;
+}
+
+.showUp{
+    animation-name: showup;
+    animation-duration:  1.5s;
+    animation-iteration-count:  1; 
+    animation-fill-mode: forwards;
+}
+
+.expand{
+    animation-name: expand;
+    animation-duration:  1.5s;
+    animation-iteration-count:  1; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes showslider {	
+    0%{	
+        opacity: 0;
+        margin-left: -300px;
+    }	
+    100%{
+        opacity: 1;
+        margin-left: 0;
+    }	  	
+}
+
+@keyframes showup {	
+    0%{	
+        opacity: 0;
+        margin-top: 300px;
+        
+    }	
+    100%{
+        opacity: 1;
+        margin-top: 0;        
+    }
+}
+
+@keyframes expand {	
+    0%{	
+        opacity: 0;
+        width: 0;
+        border-radius: 50%;
+    }
+    100%{
+        opacity: 1;
+        width: 80%;
+        border-radius: 0;
+    }	
+    
+}
